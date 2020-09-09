@@ -11,6 +11,17 @@
 - with Noto Sans JP
 - with GitHub Actions
 
+## configuration
+- Environment variables are embedded
+
+### how to
+```jsx
+console.log(process.env.URL)
+```
+
+### others
+- please check my all codes
+
 ## start
 ```bash
 # local development
@@ -37,11 +48,3 @@ SLACK_WEBHOOK_URL
 
 ## firebase setting
 - Edit [.firebaserc](.firebaserc)
-
-## configuration
-- Environment variables are embedded
-
-### how to
-```jsx
-console.log(process.env.URL)
-```
