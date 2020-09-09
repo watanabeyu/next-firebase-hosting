@@ -1,0 +1,34 @@
+{
+  "eslint.nodePath": "./node_modules/eslint",
+  "eslint.run": "onSave",
+  "eslint.alwaysShowStatus": true,
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "stylelint.validate": [
+    "css",
+    "html",
+    "less",
+    "markdown",
+    "postcss",
+    "sass",
+    "scss",
+    "styled-css",
+    "sugarss",
+    "vue-html",
+    "vue-postcss"
+  ],
+  "[scss]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+}

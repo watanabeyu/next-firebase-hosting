@@ -1,0 +1,37 @@
+# name: PR to develop
+# on:
+#   pull_request:
+#     types: ['opened','synchronize']
+#     branches:
+#       - 'develop'
+
+# jobs:
+#   build:
+#     if: startsWith(github.head_ref, 'feature')
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v1
+
+#       - name: npm install
+#         run: npm install
+
+#       - name: npm run lint
+#         run: npm run lint
+#       - name: npm run test
+#         run: npm run test
+
+#       - name: npm run build
+#         run: npm run build:development
+#         env:
+#           CI: false
+      
+#       - name: slack notification
+#         uses: 8398a7/action-slack@v2
+#         with:
+#           status: ${{ job.status }}
+#           text: PR to develop
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

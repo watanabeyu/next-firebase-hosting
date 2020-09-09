@@ -1,0 +1,41 @@
+# name: develop merge
+# on:
+#   push:
+#     branches:
+#       - 'develop'
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v1
+
+#       - name: npm install
+#         run: npm install
+#       - name: npm install firebase-tools
+#         run: npm install --save-dev firebase-tools
+
+#       - name: npm run lint
+#         run: npm run lint
+#       - name: npm run test
+#         run: npm run test
+
+#       - name: npm run build
+#         run: npm run build:development
+#         env:
+#           CI: false
+
+#       # deploy development
+#       - name: deploy development
+#         run: npm run deploy:development -- --token ${{ secrets.FIREBASE_TOKEN }}
+      
+#       - name: slack notification
+#         uses: 8398a7/action-slack@v2
+#         with:
+#           status: ${{ job.status }}
+#           text: https://example.com
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

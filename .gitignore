@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules
+
+# output
+dist/
+storybook-static/
+
+# Firebase cache
+.firebase/
+
+# Firebase debug log
+firebase-debug.log
+firestore-debug.log
+
+# error log
+yarn-error.log
+
+.next
+public/style.css

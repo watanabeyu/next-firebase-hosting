@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "development": "development-project",
+    "production": "production-project"
+  },
+  "targets": {
+    "dev-dancewith-jp": {
+      "hosting": {
+        "web": [
+          "development-project"
+        ]
+      }
+    },
+    "dancewith-jp": {
+      "hosting": {
+        "web": [
+          "production-project"
+        ]
+      }
+    }
+  }
+}
